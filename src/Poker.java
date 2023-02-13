@@ -1,8 +1,10 @@
 import java.util.Random;
 
-public class Poker {
+import javax.sound.midi.VoiceStatus;
+import javax.swing.UIDefaults.ProxyLazyValue;
 
-    public Poker() {
+public class Poker {
+    public void osztas(){
         System.out.println(getPitch());
         System.out.printf("%d %d %d %d %d\n",
         getPitch(),
@@ -11,6 +13,9 @@ public class Poker {
         getPitch(),
         getPitch()
         );
+    }
+    public Poker() {
+       osztas();
     }
     public int getPitch(){
         Random random =new Random();
